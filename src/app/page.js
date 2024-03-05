@@ -1,56 +1,116 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import JavascriptIcon from '@mui/icons-material/Javascript';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+          <h2 className={styles.name}>
+            Ricardo Olvera Velasco
+          </h2>
+          <h3 className={styles.job}>
+            Front End Developer
+          </h3>
+        </div>
+        <div className={styles.center}>
+          <p className={styles.profile}>
+            Soy desarrollador front-end y estudiante de Diseño y Comunicación Visual 
+            con sólidos conocimientos en tecnologías web. Mi enfoque principal ha sido 
+            trabajar con HTML, CSS, JavaScript y React.js, lo que me ha permitido crear 
+            experiencias web atractivas y funcionales. Mi objetivo a corto plazo es 
+            continuar desarrollando mis habilidades en el desarrollo móvil, centrando en 
+            Swift y Kotlin para crear aplicaciones innovadores.
+          </p>
+          <a className={styles.imageProfile}>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
+              className=""
+              src="/rolvera.png"
+              alt="Next.js Logo"
+              width={140}
+              height={180}
               priority
             />
           </a>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.grid}>
+          <h2 className={styles.tec}>
+            Tecnologías
+          </h2>
+        <div>
+          <a
+            className={styles.card}
+          >
+            <Image
+              className={styles.icons}
+              src="/javascript.svg"
+              alt="TypeScript Logo"
+              width={60}
+              height={60}
+              priority
+            />
+          </a>
+
+          <a
+            className={styles.card}
+          >
+            <Image
+              className={styles.icons}
+              src="/typescript.svg"
+              alt="TypeScript Logo"
+              width={60}
+              height={60}
+              priority
+            />
+          </a>
+
+          <a
+            className={styles.card}
+          >
+            <Image
+              className={styles.icons}
+              src="/react.svg"
+              alt="React.js Logo"
+              width={60}
+              height={60}
+              priority
+            />
+          </a>
+
+          <a
+            className={styles.card}
+          >
+            <Image
+              className={styles.icons}
+              src="/tailwind.svg"
+              alt="React.js Logo"
+              width={60}
+              height={60}
+              priority
+            />
+          </a>
+          <a
+            className={styles.card}
+          >
+            <Image
+              className={styles.icons}
+              src="/next.svg"
+              alt="React.js Logo"
+              width={60}
+              height={60}
+              priority
+            />
+          </a>
+        </div>
       </div>
 
       <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <h2 className={styles.tec}>
+          Proyectos
+        </h2>
 
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -58,10 +118,29 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <Image
+              className=""
+              src="/pokedex.jpg"
+              alt="Next.js Logo"
+              width={240}
+              height={160}
+              priority
+            />
+        </a>
+        <a
+          href=""
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+              className=""
+              src="/marsiquerida.jpg"
+              alt="Next.js Logo"
+              width={200}
+              height={200}
+              priority
+            />
         </a>
 
         <a
@@ -70,10 +149,6 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
         </a>
 
         <a
@@ -82,12 +157,6 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
         </a>
       </div>
     </main>
