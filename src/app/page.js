@@ -113,8 +113,8 @@ export default function Home() {
         </h2>
         <div className={styles.grid}>
 
-        <div
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        <a
+          href="https://pokedex-rov.netlify.app"
           className={styles.projects}
           target="_blank"
           rel="noopener noreferrer"
@@ -130,8 +130,8 @@ export default function Home() {
             <p className={styles.desc}>
               Proyecto realizado con React, JavaScript, CSS, HTML donde se practicó el consumo de API Rest y protección de páginas. 
             </p>
-        </div>
-        <div
+        </a>
+        <a
           href=""
           className={styles.projects}
           target="_blank"
@@ -152,7 +152,7 @@ export default function Home() {
               Con este proyecto tuve oportunidad de poner en practica todo
               lo que sé, aprender typescript, tailwind y trabajr con Nextjs
             </p>
-        </div>
+        </a>
         </div>
       </div>
     </main>
