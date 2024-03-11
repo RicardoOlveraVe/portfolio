@@ -104,4 +104,46 @@
 .card{
   width: 60px;
   height: 60px;
+  margin: 4px;
+}
+
+.projects{
+  display: grid;
+  color: black;
+  background: #d2d3db;
+  padding: 4px;
+  margin: 8px;
+  max-width: 250px;
+  border-radius: 14px;
+  height: 100%;
+}
+
+.img{
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.grid{
+  display: flex;
+}
+
+.desc{
+  text-align: justify;
+  font-size: small;
+  padding: 1rem;
+}
+
+.prj{
+  display: flex;
+}
+
+.titulos{
+  display: grid;
+  justify-items: center;
+  font-size: 2rem;
+}
+
+.proy{
+  margin-top: 16px;
 }

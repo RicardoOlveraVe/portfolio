@@ -36,11 +36,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.grid}>
-          <h2 className={styles.tec}>
+      <div>
+          <h2 className={styles.titulos}>
             Tecnologías
           </h2>
-        <div>
+        <div className={styles.tec}>
           <a
             className={styles.card}
           >
@@ -107,57 +107,53 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.grid}>
-        <h2 className={styles.tec}>
+      <div className={styles.proy}>
+        <h2 className={styles.titulos}>
           Proyectos
         </h2>
+        <div className={styles.grid}>
 
-        <a
+        <div
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
+          className={styles.projects}
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
-              className=""
+              className={styles.img}
               src="/pokedex.jpg"
               alt="Next.js Logo"
               width={240}
               height={160}
               priority
             />
-        </a>
-        <a
+            <p className={styles.desc}>
+              Proyecto realizado con React, JavaScript, CSS, HTML donde se practicó el consumo de API Rest y protección de páginas. 
+            </p>
+        </div>
+        <div
           href=""
-          className={styles.card}
+          className={styles.projects}
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
-              className=""
+              className={styles.img}
               src="/marsiquerida.jpg"
               alt="Next.js Logo"
               width={200}
               height={200}
               priority
             />
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
+            <p className={styles.desc}>
+              Es una aplicación web donde permite tomar ordenes a meseros, permite visualizar en tiempo real las ordenes en cocinas, ver la administración del lugar contando con gráficas, opción para añadir más usuarios y añadir platillos nuevos al menú.
+            </p>
+            <p className={styles.desc}>
+              Con este proyecto tuve oportunidad de poner en practica todo
+              lo que sé, aprender typescript, tailwind y trabajr con Nextjs
+            </p>
+        </div>
+        </div>
       </div>
     </main>
   );
