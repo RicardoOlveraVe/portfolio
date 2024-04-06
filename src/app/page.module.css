@@ -225,3 +225,67 @@
     margin-top: 2rem;
   }
 }
+
+.sectForm{
+  margin: 32px;
+  height: 80vh;
+}
+
+.formTitle{
+  font-size: 2.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 16px;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  background: rgba(248, 247, 209, 0.4);
+  border-radius: 12px;
+  box-shadow: 10px 5px 15px #02108a ;
+  padding: 16px;
+
+}
+
+.formList{
+  font-family: var(--font-mono);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.formSect{
+  display: grid;
+}
+
+.formLabel{
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+.formInput{
+  height: 24px;
+  width: 14rem;
+  border-radius: 4px;
+  border: 0px;
+}
+
+.formText{
+  height: 10rem;
+  width: 14rem;
+  resize: none;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.formButton{
+  height: 2rem;
+  width: 14rem;
+  background: #02108a;
+  border-radius: 8px;
+  border: 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

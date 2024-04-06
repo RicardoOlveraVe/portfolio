@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import JavascriptIcon from '@mui/icons-material/Javascript';
 
 export default function Home() {
   return (
@@ -251,28 +250,57 @@ export default function Home() {
         </a>
         </div>
       </div>
-      <div>
-        <form>
-          <ul>
-            <li>
-              <label>Nombre</label>
-              <input type="text" id="name" name="user_name"/>
+      <div className={styles.sectForm} id="contact">
+        <h2 className={styles.formTitle}>Contacto</h2>
+        <form className={styles.form}>
+          <ul className={styles.formList}>
+            <li className={styles.formSect}>
+              <label className={styles.formLabel}>Nombre</label>
+              <input 
+                className={styles.formInput} 
+                type="text" 
+                id="name" 
+                name="user_name" 
+                
+              />
             </li>
-            <li>
-              <label>Correo electónico</label>
-              <input type="email" id="mail" name="user_mail"/>
+            <li className={styles.formSect}>
+              <label className={styles.formLabel}>Correo electrónico</label>
+              <input 
+                className={styles.formInput} 
+                type="email" 
+                id="mail" 
+                name="user_mail"
+                
+              />
             </li>
-            <li>
-              <label>Teléfono</label>
-              <input type="tel" id="phone" name="user_phone"/>
+            <li className={styles.formSect}>
+              <label className={styles.formLabel}>Teléfono</label>
+              <input 
+                className={styles.formInput} 
+                type="tel" 
+                id="phone" 
+                name="user_phone"
+                
+              />
             </li>
-            <li>
-              <label>Mensaje</label>
-              <textarea id="msg" name="user_message"></textarea>
+            <li className={styles.formSect}>
+              <label className={styles.formLabel}>Mensaje</label>
+              <textarea 
+                className={styles.formText} 
+                id="msg" 
+                name="user_message"
+                
+              ></textarea>
             </li>
+            <button className={styles.formButton} >Enviar</button>
           </ul>
         </form>
       </div>
     </main>
   );
+}
+
+export function useClient() {
+  return null;
 }
