@@ -5,7 +5,23 @@ import JavascriptIcon from '@mui/icons-material/Javascript';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      <div className={styles.navbar}>
+        <ul className={styles.menu}>
+          <li>
+            <a href="#home">Inicio</a>
+          </li>
+          <li>
+            <a href="#tec">Tecnologías</a>
+          </li>
+          <li>
+            <a href="#proj">Proyectos</a>
+          </li>
+          <li>
+            <a href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div className={styles.description} id="home">
         <div>
           <h2 className={styles.name}>
             Ricardo Olvera Velasco
@@ -27,87 +43,168 @@ export default function Home() {
             <Image
               className=""
               src="/rolvera.png"
-              alt="Next.js Logo"
+              alt="profile Logo"
               width={140}
               height={180}
               priority
             />
           </a>
         </div>
-      </div>
-
-      <div>
-          <h2 className={styles.titulos}>
-            Tecnologías
-          </h2>
-        <div className={styles.tec}>
-          <a
-            className={styles.card}
+        <div className={styles.redes}>
+          <a 
+            href="https://github.com/RicardoOlveraVe" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.reds}
           >
             <Image
-              className={styles.icons}
-              src="/javascript.svg"
-              alt="TypeScript Logo"
-              width={60}
-              height={60}
+              className={styles.red}
+              src="/tec/github.png"
+              alt="github Logo"
+              width={80}
+              height={80}
               priority
             />
           </a>
 
-          <a
-            className={styles.card}
+          <a 
+            href="https://www.linkedin.com/in/ricardo-olvera-velasco-1b73b5230/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.reds}
           >
             <Image
-              className={styles.icons}
-              src="/typescript.svg"
-              alt="TypeScript Logo"
-              width={60}
-              height={60}
+              className={styles.red}
+              src="/tec/linkedIn.png"
+              alt="linkedIn Logo"
+              width={80}
+              height={80}
               priority
             />
           </a>
 
-          <a
-            className={styles.card}
+          <a 
+            href="/doc/CV_RicardoOlvera.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.reds}
           >
             <Image
-              className={styles.icons}
-              src="/react.svg"
-              alt="React.js Logo"
-              width={60}
-              height={60}
-              priority
-            />
-          </a>
-
-          <a
-            className={styles.card}
-          >
-            <Image
-              className={styles.icons}
-              src="/tailwind.svg"
-              alt="React.js Logo"
-              width={60}
-              height={60}
-              priority
-            />
-          </a>
-          <a
-            className={styles.card}
-          >
-            <Image
-              className={styles.icons}
-              src="/next.svg"
-              alt="React.js Logo"
-              width={60}
-              height={60}
+              className={styles.red}
+              src="/tec/doc.png"
+              alt="CV Logo"
+              width={80}
+              height={80}
               priority
             />
           </a>
         </div>
       </div>
 
-      <div className={styles.proy}>
+      <div className={styles.description} id="tec">
+          <h2 className={styles.titulos}>
+            Tecnologías
+          </h2>
+        <div className={styles.tec}>
+          <div className={styles.card}>
+            <Image
+              className={styles.icons}
+              src="/tec/js.png"
+              alt="JavaScript Logo"
+              width={130}
+              height={130}
+              priority
+            />
+            <p className={styles.texTec}>JavaScript</p>
+          </div>
+
+          <div className={styles.card}>
+            <Image
+              className={styles.icons}
+              src="/tec/ts.png"
+              alt="TypeScript Logo"
+              width={130}
+              height={130}
+              priority
+            />
+            <p className={styles.texTec}>TypeScript</p>
+          </div>
+
+          <div className={styles.card}>
+            <Image
+              className={styles.icons}
+              src="/tec/css.jpeg"
+              alt="CSS Logo"
+              width={130}
+              height={130}
+              priority
+            />
+            <p className={styles.texTec}>CSS</p>
+          </div>
+
+          <div className={styles.card}>
+            <Image
+              className={styles.icons}
+              src="/tec/node.jpg"
+              alt="Node Logo"
+              width={130}
+              height={130}
+              priority
+            />
+            <p className={styles.texTec}>NodeJS</p>
+          </div>
+
+          <div className={styles.card}>
+            <Image
+              className={styles.icons}
+              src="/tec/react.svg"
+              alt="React Logo"
+              width={130}
+              height={130}
+              priority
+            />
+            <p className={styles.texTec}>ReactJS</p>
+          </div>
+
+          <div className={styles.card}>
+            <Image
+              className={styles.icons}
+              src="/tec/next.svg"
+              alt="Next Logo"
+              width={130}
+              height={130}
+              priority
+            />
+            <p className={styles.texTec}>Nextjs</p>
+          </div>
+
+          <div className={styles.card}>
+            <Image
+              className={styles.icons}
+              src="/tec/tailwind.png"
+              alt="Tailwind Logo"
+              width={130}
+              height={130}
+              priority
+            />
+            <p className={styles.texTec}>Tailwind</p>
+          </div>
+          <div className={styles.card}>
+            <Image
+              className={styles.icons}
+              src="/tec/swift.png"
+              alt="Swift Logo"
+              width={130}
+              height={130}
+              priority
+            />
+            <p className={styles.texTec}>Swift</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.proy} id="proj">
         <h2 className={styles.titulos}>
           Proyectos
         </h2>
@@ -132,7 +229,6 @@ export default function Home() {
             </p>
         </a>
         <a
-          href=""
           className={styles.projects}
           target="_blank"
           rel="noopener noreferrer"
@@ -154,6 +250,28 @@ export default function Home() {
             </p>
         </a>
         </div>
+      </div>
+      <div>
+        <form>
+          <ul>
+            <li>
+              <label>Nombre</label>
+              <input type="text" id="name" name="user_name"/>
+            </li>
+            <li>
+              <label>Correo electónico</label>
+              <input type="email" id="mail" name="user_mail"/>
+            </li>
+            <li>
+              <label>Teléfono</label>
+              <input type="tel" id="phone" name="user_phone"/>
+            </li>
+            <li>
+              <label>Mensaje</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+          </ul>
+        </form>
       </div>
     </main>
   );
